@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
-	
 <head>
-		<meta charset=utf-8 />
+	<meta charset=utf-8 />
 </head>
-
-<body bgcolor="yellow" >
+<body bgcolor="gray" >
 	<div>
 		<script>
 			var CH = 0;
@@ -14,6 +12,7 @@
 			function checkKey(e){
 				console.log(e.keyCode);
 				document.write(e.keyCode);
+				document.bgColor="gray";
 				if(e.keyCode == 49){
 					CH = CH + 1;
 					if(CH > 7){CH = CH - 1;}
