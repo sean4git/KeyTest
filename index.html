@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+	
+<head>
+		<meta charset=utf-8 />
+</head>
+
+<body>
+	<div>
+		<script>
+			var CH = 0;
+			
+			window.addEventListener("keydown", checkKey, false);
+			function checkKey(e){
+				console.log(e.keyCode);
+				document.write(e.keyCode);
+				if(e.keyCode == 49){
+					CH = CH + 1;
+					if(CH > 7){CH = CH - 1;}
+					console.log(CH);
+					printTest(CH);
+				} else if(e.keyCode == 50){
+					CH = CH - 1;
+					if(CH < 1){CH = 1;}
+					//console.log(e.keyCode);
+					printTest(CH);
+				} 
+			}
+			function printTest(CH){
+				switch(CH){
+					case 1:
+					console.log("#1")
+					break;
+					case 2:
+					console.log("#2")
+					break;
+					case 3:
+					console.log("#3")
+					break;
+					case 4:
+					console.log("#4")
+					break;
+					case 5:
+					console.log("#5")
+					break;
+					case 6:
+					console.log("#6")
+					break;										
+					case 7:
+					console.log("#7")
+					break;										
+
+					//default:
+					// CH UP 33
+					// CH DOWN 34
+					//break;
+				}
+			}
+		</script>
+	</div>
+</p>
+<font size="10" color="yellow">KEY TEST</font></p>
+	
+</body>
+</html>
